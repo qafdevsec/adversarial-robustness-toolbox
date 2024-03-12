@@ -1,11 +1,11 @@
 # base
 
-numpy>=1.18.5,<1.25
+numpy>=1.22.2,<1.25
 scipy==1.10.1
 matplotlib==3.7.1
 scikit-learn>=0.22.2,<1.2.0
 six==1.16.0
-Pillow==9.4.0
+Pillow==10.2.0
 tqdm==4.65.0
 statsmodels==0.13.5
 pydub==0.25.1
@@ -21,7 +21,7 @@ h5py==3.8.0
 
 # frameworks
 
-tensorflow==2.10.1
+tensorflow==2.11.1
 keras==2.10.0
 tensorflow-addons>=0.13.0
 
@@ -56,10 +56,14 @@ pytest-flake8~=1.1.1
 flake8~=4.0.1
 pytest-mock~=3.10.0
 pytest-cov~=4.0.0
-requests~=2.28.2
+requests~=2.31.0
 
 # ART
 -e .
 
 # NOTE to contributors: When changing/adding packages, please make sure that the packages are consistent with those
 # present within the Dockerfile
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=2.3.8 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
