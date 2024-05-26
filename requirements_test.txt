@@ -1,6 +1,6 @@
 # base
 
-numpy>=1.18.5,<1.25
+numpy>=1.21.0rc1,<1.25
 scipy==1.10.1
 matplotlib==3.7.1
 scikit-learn>=0.22.2,<1.2.0
@@ -63,3 +63,4 @@ requests~=2.28.2
 
 # NOTE to contributors: When changing/adding packages, please make sure that the packages are consistent with those
 # present within the Dockerfile
+protobuf>=3.18.3 # not directly required, pinned by Snyk to avoid a vulnerability
